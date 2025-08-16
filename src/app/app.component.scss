@@ -1,0 +1,64 @@
+// خلفية عامة
+:host {
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe6f2, #fff0f7, #fbe8ff);
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  padding: 2rem;
+}
+
+// تنسيق العناوين
+h2, h3, label {
+  color: #cc2e92;
+  font-weight: 600;
+}
+
+// الإيميلات والأسماء المعروضة
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  span {
+    color: #ff5ca2;
+    font-weight: bold;
+  }
+}
+
+// الـ form inputs
+input[type="text"], 
+input[type="email"] {
+  display: block;
+  width: 250px;
+  padding: 10px 15px;
+  margin: 8px 0 16px 0;
+  border: 2px solid #ff9fd6;
+  border-radius: 12px;
+  background-color: #fff0f7;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border-color: #ff5ca2;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(255, 92, 162, 0.5);
+  }
+}
+
+// زرار لطيف (لو هتستخدمي button)
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ff5ca2, #ff9fd6);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(45deg, #ff9fd6, #ff5ca2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(255, 92, 162, 0.4);
+  }
+}
